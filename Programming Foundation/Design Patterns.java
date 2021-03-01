@@ -1,0 +1,1 @@
+Design patterns are general solutions to common object-oriented problems. You can use design patterns to create software that is more flexible, maintainable, and resilient to change. 

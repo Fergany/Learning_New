@@ -1,0 +1,201 @@
+Lynda.com - Learning Angular
+----------------------------
+
+https://github.com/planetoftheweb/learnangular5
+
+Using the Angular CLI
+---------------------
+Angular:
+- App framework
+- Component version.
+- Consider modular framework: u don't just build small components yourself, 
+
+Features:
+- Data binding.
+- Templates
+- CLI
+
+Angular CLI:
+- Command line interface.
+- Scaffolds an app (creating an app with common settings quickly).
+
+Main CLI components:
+- ng new Name (create/scaffold a new application).
+- ng serve (run the application in development).
+- ng build (publish the app to the server, create 'dist' directory).
+- ng g TYPE NAME
+
+npm install -g @angular/cli
+
+Understanding Angular CLI project:
+----------------------------------
+ dist
+ src
+ 
+Installing additional framework:
+--------------------------------
+package.json
+npm install jquery --save-dev
+
+install this pkg and save it as development dependencies.
+
+npm install pkg@veriosn --save-dev
+
+Understanding templates in Angular:
+-----------------------------------
+@Component({
+  selector: 'app-header',
+  templateUrl: './header.component.html', // or template, and usr this ` not '
+  styleUrls: ['./header.component.css'] // or style: [` some styles`]
+})
+
+Binding Data to templates:
+--------------------------
+{{ var }} expression
+Directives
+constructor() method
+Declaring var types
+
+Working with events:
+--------------------
+( evt )
+Bind to a method
+$event info
+
+Using properties:
+-----------------
+[ PROP ]
+Any element property
+Compared to expressions
+
+
+Two way binding
+----------------
+especially used for form elements,
+for different types of fields that you might.
+[( ngModel )]
+[( ngControl )]
+Additional imports
+
+
+Working with components
+-----------------------
+Using lifecycle methods:
+
+Two-way data binding
+- onInit (way of take care of things after the component has been built, and the great place to load external data)
+- Additional imports
+- Subscribe to observable
+
+Creating components:
+
+ng generate component component-name
+
+Props to pass vars
+
+inputs/imports
+
+generate:
+component-name:
+---src/app/component-name/component-name.component.css
+---src/app/component-name/component-name.component.html
+---src/app/component-name/component-name.component.spec.ts
+---src/app/component-name/component-name.component.ts
+
+Filtering content:
+-----------------
+ng generate pipe pipe-name 
+
+---src/app/pipe-name.pipe.specs.ts
+---src/app/pipe-name.pipe.ts 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+

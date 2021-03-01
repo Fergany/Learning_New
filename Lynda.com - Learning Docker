@@ -1,0 +1,28 @@
+Lynda.com ==> Learning Docker
+https://www.lynda.com/Docker-tutorials/Why-create-containers-using-Docker/721901/779034-4.html
+
+What is Docker?
+Running linux system, with a small containers,
+- Craves up a computer into sealed containers that run your code.
+- Gets the code to and from ur computers.
+- Build these containers for you.
+- Is a social platform for u t ofind and share containers, which are different from virtual machines.
+
+
+What is container?
+- A self-contained sealed unit of SW.
+- Cotaines everything required to run the code ()
+- includes (batteries, OS, Code, configs, processes, Networking, dependencies).
+
+About Docker
+- A client program named Docker.
+- a server program that manages a Linux system.
+- A program that builds containers from code.
+- A service that distributes container
+- A company that makes containers.
+
+docker run docker-name
+
+
+
+ 

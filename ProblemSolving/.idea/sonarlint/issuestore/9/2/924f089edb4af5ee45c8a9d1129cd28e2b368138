@@ -1,0 +1,63 @@
+
+Tsquid:S1854Æ"5Remove this useless assignment to local variable "n".(Ú¹ãï8„ò˜ĞŸ.
+Qsquid:S1481û"-Remove this unused "coinsArr" local variable.(£„Äªıÿÿÿÿ8„ò˜ĞŸ.
+\
+squid:S106‹"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8„ò˜ĞŸ.
+vsquid:S3776ì"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(îúÊ´øÿÿÿÿ8„ò˜ĞŸ.
+dsquid:UselessImportCheck"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8ÁÛÖ¸­.
+\
+squid:S106‹"9Replace this use of System.out or System.err by a logger.(´ºÔÏÿÿÿÿÿ8„ò˜ĞŸ.
+]squid:S4973Š"9Use the "equals" method if value comparison was intended.(ŠÖ¼¡ıÿÿÿÿ8„ò˜ĞŸ.
+\
+squid:S106Ñ"9Replace this use of System.out or System.err by a logger.(¾ùôŒùÿÿÿÿ8„ò˜ĞŸ.
+Jsquid:S1905¹"&Remove this unnecessary cast to "int".(üËú–ùÿÿÿÿ8„ò˜ĞŸ.
+bsquid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8ŞÓı‘£.
+bsquid:S1155Œ">Use isEmpty() to check whether the collection is empty or not.(É€°Îøÿÿÿÿ8„ò˜ĞŸ.
+\
+squid:S106ñ"9Replace this use of System.out or System.err by a logger.(…ùŸàıÿÿÿÿ8„ò˜ĞŸ.
+vsquid:S00117ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­à¶ßÿÿÿÿÿ8„ò˜ĞŸ.
+\
+squid:S106¥"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8„ò˜ĞŸ.
+Ssquid:EmptyStatementUsageCheckß"Remove this empty statement.(ˆ”©ûÿÿÿÿ8„ò˜ĞŸ.
+vsquid:S00117“"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖÚÖ®şÿÿÿÿ8„ò˜ĞŸ.
+Jsquid:S1905¼"&Remove this unnecessary cast to "int".(çéöÒşÿÿÿÿ8„ò˜ĞŸ.
+ squid:ForLoopCounterChangedCheckF"XRefactor the code in order to not assign to this loop counter from within the loop body.( æƒ«ıÿÿÿÿ8„ò˜ĞŸ.
+]squid:S4973Š"9Use the "equals" method if value comparison was intended.(ŠÖ¼¡ıÿÿÿÿ8„ò˜ĞŸ.
+W"squid:SwitchLastCaseIsDefaultCheckU""Add a default case to this switch.(ÉÌÆá8„ò˜ĞŸ.
+wsquid:S3012v"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(Åóı˜8„ò˜ĞŸ.
+nsquid:S1149S"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÍşïŠ8„ò˜ĞŸ.
+W
+squid:S106Ô"9Replace this use of System.out or System.err by a logger.(…ò£—8„ò˜ĞŸ.
+\
+squid:S106’"9Replace this use of System.out or System.err by a logger.(–í˜úÿÿÿÿ8„ò˜ĞŸ.
+]squid:S4973Š"9Use the "equals" method if value comparison was intended.(ŠÖ¼¡ıÿÿÿÿ8„ò˜ĞŸ.
+`squid:S1854û"<Remove this useless assignment to local variable "coinsArr".(£„Äªıÿÿÿÿ8„ò˜ĞŸ.
+Esquid:S1481Æ"&Remove this unused "n" local variable.(Ú¹ãï8µËñ“–.
+usquid:S00117#"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—øãıÿÿÿÿ8ÁÛÖ¸­.
+jsquid:UselessImportCheck"?Remove this unused import 'java.time.format.DateTimeFormatter'.(‰÷÷ª8ÁÛÖ¸­.
+\squid:S1155\">Use isEmpty() to check whether the collection is empty or not.(Ô™öĞ8„ò˜ĞŸ.
+V
+squid:S106ï"9Replace this use of System.out or System.err by a logger.(À®ù8„ò˜ĞŸ.
+ssquid:S1149R"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÚÍşÿÿÿÿ8Ò×©œ.
+usquid:S3776P"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(éœÌúÿÿÿÿ8„ò˜ĞŸ.
+\squid:S1155Z">Use isEmpty() to check whether the collection is empty or not.(­ˆÈ¶8„ò˜ĞŸ.
+Xsquid:S4973§"9Use the "equals" method if value comparison was intended.(Ó¢ßñ8„ò˜ĞŸ.
+vsquid:S00117“"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖÚÖ®şÿÿÿÿ8„ò˜ĞŸ.
+‹ squid:ForLoopCounterChangedCheckI"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì‚ˆÌ8„ò˜ĞŸ.
+\
+squid:S106Á"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8„ò˜ĞŸ.
+\squid:S4973"9Use the "equals" method if value comparison was intended.(¨ŞÕ–şÿÿÿÿ8ßä°ÔË.
+usquid:S001172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€ƒçÀùÿÿÿÿ8ßä°ÔË.
+isquid:UselessImportCheck">Remove this unused import 'java.nio.charset.StandardCharsets'.(ï˜ŞÛ8ßä°ÔË.
+Zsquid:S1854
+"7Remove this useless assignment to local variable "arr".(š–¯şúÿÿÿÿ8ßä°ÔË.
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(ä““à8ßä°ÔË.
+wsquid:S3012("YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(¶ºê8ßä°ÔË.
+[
+squid:S106,"9Replace this use of System.out or System.err by a logger.(í Âõøÿÿÿÿ8ßä°ÔË.
+Esquid:S16595"'Declare "binaryGap" on a separate line.(ğ»Œ8ßä°ÔË.
+W
+squid:S106ô"9Replace this use of System.out or System.err by a logger.(Ù©È±8ßä°ÔË.
+Ksquid:S1481
+"(Remove this unused "arr" local variable.(š–¯şúÿÿÿÿ8ßä°ÔË.

@@ -1,0 +1,1 @@
+if you get code from internet - either open src, ... - take it with their test, or write characteristic testing

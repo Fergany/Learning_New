@@ -1,0 +1,218 @@
+In the Java world, JDBC is the most common technology for accessing relational database from a relational database management system or RDBMS.
+
+Hibernate
+=========
+- ORM tool.
+- Framework that simplifies DB access.
+- Data is represented as simple Java Object (POJO).
+- A session manager is used to access these objects.
+- Productivity is increased when data persistency is needed.
+- Hibernate makes persistent database access easier.
+- open src, under the GNU license.
+
+- Database access is done thru mapping and configuration.
+- Hibernate hides the details of the database schema.
+- Provides more time to concenrate on buz logic.
+- Hibernate includes query and retrieval operations.
+- Query results are objects instead of SQL result set.
+- Persistence is achieved by mapping objects to tables.
+
+Hibernate Adv:
+--------------
+- Handles mapping objects to tables using XML or annotations.
+- Provides simple APIs to store and retrieve data.
+- Database changes only require changes to the XML.
+- Manage complex table associations.
+- Reduce database access using smart fetching strategies.
+- Supports most major relational databases.
+
+Configuration file:
+===================
+- Required to use hibernate.
+- Used to define required db properties.
+- hibernate.cfg.xml
+ex:
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.DerbyDialect</property>
+    <property name="hibernate.connection.driver_class">org.apache.derby.jdbc.ClientDriver</property>
+    <property name="hibernate.connection.url">jdbc:derby://localhost:1527/sample</property>
+    <property name="hibernate.connection.username">app</property>
+    <property name="hibernate.connection.password">app</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.query.factory_class">org.hibernate.hql.internal.classic.ClassicQueryTranslatorFactory</property>
+  </session-factory>
+</hibernate-configuration>
+
+Reverse Engineering:
+====================
+- Hibernate uses a collection of rules for mapping.
+- This file can specify type mappings and table filtering.
+- <type-mapping> used ot convert types:
+- <table> defines tables to be reverse engineered.
+int -> INTEGER
+short -> SMALLINT
+float -> FLOAT
+string -> VARCHAR
+
+Java Application:
+-----------------
+
+
+Data Persistence
+=================
+- Hibernate works with existing Java object model.
+- Required object are marked as persistent.
+- Only objects with instance variables can be stored.
+- Objects can be in three states of persistence:
+Transiet state
+--------------
+- Transiet objects exist in memory.
+- The DB has no knowledge of the object.
+- To persist this type, we must ask the sessions to save.
+- At this point, it's assigned an identifier.
+
+Persistent State
+----------------
+- Once it is saved, it becomes "persistent".
+- The objects exist in the database.
+- Changes are reflected in the current transaction.
+- Changes are reflected in the databases.
+
+Detached State
+--------------
+- These objects exist in the database but a connection is lost.
+- A persistence object whose session has been closed.
+- It can be reattached to a hibernate session when needed.
+
+
+SessionFactory
+===============
+- Used to establish a connection to the database.
+- Core hibernate classes are used for database connections.
+- Only open a connection when needed, and then close the connection as soon as possible.
+- Each application should have one SessionFactory instance.
+- A configuratoin object is used to create a SessionFactory object.
+- The SessionFactory is a thread safe object.
+- Create the SessionFactory object at startup (as it is considered a heavy weight object).
+- Separate SessionFactory objects are required for multiple db connections.
+
+Session Object
+--------------
+- Only create a session object when needed.
+- Destroy as soon as task is complete.
+- The session object wraps the JDBC resources.
+- Methods include: save, persist, get, create, read, openSession, etc.
+
+Transaction Object
+------------------
+- A tranaction is a unit of work.
+- Wrapping your work in a transaction restricts access from other users.
+- Transactions can be started, commited, or rolled back.
+- Handled by transaction manager.
+
+Mapping Strategies
+==================
+- Entities/classes refer to tables in a database.
+- An instance of a class refers to a row in the table.
+- Attributes/Properties of a class refer to columns in a table.
+- Class should follow the POJO or JavaBean programming model (empty constructor, setter & getters methods for all attributes).
+
+- Hibernate uses configuration file for mapping data.
+- Relationships are included in the mapping file.
+- Acts as a translator for Java and JDBC.
+- Reading and writing to the database is done by hibernate.
+
+- There are two ways to identify mapping in hibenate.
+- Prior to Java 5, the xml file was used exclusively.
+- Annotations were introduced with Java 5.
+- Tools can be used to auto-generate the xml files.
+- Files must be saved with 'classname'.hbm.xml
+- The root element is <hibernate-mapping>
+- All <class> elements are included in the root element.
+- Both the class name and databases table name are included.
+- The <meta> tag is optional and can be used to describe class.
+- The <id> element maps the unique ID attribute.
+- The <generator> tag is used to auto-generate primary key (within id element).
+- The <property> tag is used to map a class property to a column in the table.
+
+CRUD Operations
+===============
+Add Object
+==========
+Update Object
+=============
+Delete Object
+=============
+
+HQL
+===
+- Hibernare has its own SQL, to access the DB.
+- Hibernate undestands native SQL.
+- HQL is an easy alternative to SQL.
+- Think of HQL as an OO version of SQL.
+- HQL adds a layer of abstraction for the programmer,
+- mean that the program doens't need to change if underlying db structure change.
+- HQL works with persistent objects and their properties.
+- Behind the scenes, the queries are translated into conventional SQL queries.
+- Using HQL helps avoid portability hassles.
+
+Select Clause
+=============
+There are three ways to retrieve objects from the database using the Hibernate framework. We have the Hibernate's criteria query API, HQL, and native SQL queries.
+
+Named Parameter
+===============
+
+Session session = factory.openSession();
+
+String hql = "from Employee where salary >: paramName";
+Query query = session.createQuery( hql );
+
+query.setInteger("paramName", 12300); // 
+
+query.list(); // return List
+
+
+Aggregate methods
+=================
+String hql = "select max(e.salary) from Employee as e";
+Query query = session.createQuery( hql );
+int result = (int) query.uniqueResult(); // return Object
+
+for SQL query:
+--------------
+SQLQuery sQLQuery = session.createSQLQuery("native SQL query");
+// then you can use lsit(), uniqueResult();
+
+Criteria API
+============
+Criteria criteria = session.createCriteria(Employee.class);
+criteria.add(Restrictions.gt("salary", 10000));
+criteria.addOrder(Order.asc("firstName"));
+
+List list = criteria.list();
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

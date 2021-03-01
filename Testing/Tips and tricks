@@ -1,0 +1,15 @@
+@Table not create table in DB.
+Solutions:
+make sure of the in 'application.properties'
+
+# or drop n create table again, good for testing, comment this in production
+spring.jpa.hibernate.ddl-auto=create 
+
+# or 
+spring.jpa.hibernate.ddl-auto=update
+
+Angular ngIf:
+============
+https://angular.io/api/common/NgIf
+
+https://stackoverflow.com/questions/32221090/org-springframework-web-bind-missingservletrequestparameterexception-required/32221290
