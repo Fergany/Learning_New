@@ -63,8 +63,13 @@ collaboration and communication Tips:
 
 
 Team composition:
-- T-Shape (broad knowledge, deep knowledge).
+- 7 +- 2
+- T-Shape
+        (broad knowledge - cross bar of the T, deep knowledge - vertical of the T).
+maybe you need some consultancy resources (specialized skills)
+        Architet, DB Analyst, Security Analyst
 
+        Establish Team Norms
 Product Vision
 ==============
 - Serves as a guide for your team.

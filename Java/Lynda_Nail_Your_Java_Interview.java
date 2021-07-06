@@ -6,7 +6,7 @@
  The interview will be conversational and writing some code in a white board.
  
  Speak to ur technical ability and what have done in ur career.
- 
+
 JVM
 ===
 - Java was designed so applications can be executed on any platform that supports Java wzout having to be recompiled. 
@@ -36,7 +36,7 @@ Non-Static method
 -----------------
 instance mehtods.
 belong to each object generated from the class.
-if method related to an instance's attibutes.
+if method related to an instance''s attibutes.
 
 Modifiers
 =========
@@ -60,7 +60,7 @@ Use Optional to avoid NullPointerException
 - To see if value exist use isPresent()
 - Use get() to retrieve the value.
 
-Lampda
+Lambda
 ------
 - Allow you to pass function as data.
 - What if we need to create a function on the fly?
@@ -81,7 +81,7 @@ local variable type reference
 
 new swich expression
 -------------------
-String result = swithc (number) {
+String result = switch (number) {
 					case 3 -> "3";
 					default -> "-1";
 					// or enahce the default as
@@ -177,7 +177,7 @@ LinkedList
 - Each element is called a node.
 - A node contains data as well as a pointer pointing to the next element in the linked list.
 - If the pointer is null, then this is the last element in the list.
-- Since elements are connected by pointers, they don't need to be stored next to each other (unlike the array, stored contiguously in memory).
+- Since elements are connected by pointers, they don''t need to be stored next to each other (unlike the array, stored contiguously in memory).
 - Singly linked lists: contain a pointer pointing to next node.
 - Doubly linked list: contain a pointer pointing to the next node, and a pointer pointing to the previous node.
 - addFirst(e), addLast(e), add(index, e), add(e)
@@ -189,7 +189,7 @@ LinkedList
 - size()
 - to print the LinkedList, just print(linkedListObj);
 
-Java abstracts many of things needed to maintain the data structure's form.
+Java abstracts many of things needed to maintain the data structure''s form.
 
 Adv:
 ----

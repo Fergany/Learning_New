@@ -1,4 +1,5 @@
-The terms Agile and Scrum are often used interchangeably, but they're not the same thing. 
+https://www.linkedin.com/learning/what-is-scrum/what-is-scrum
+The terms Agile and Scrum are often used interchangeably, but they're not the same thing.
 
 In fact, Agile is the label used to define a specific philosophy, mindset and value system as a unique approach to project work. The goal of Agile is to observe the unknowns around you. 
 

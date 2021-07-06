@@ -14,7 +14,7 @@ T ==> new type variable, called T.
 
 **Example:**
 ```
-    static Character[] charArr = {'a', 'b', 'c'};
+   ; static Character[] charArr = {'a', 'b', 'c'};
     static String[] strArr = {"str1", "str2", "str3"};
 
     public static List<Object> arrayToList(Object[] array, List<Object> list) {

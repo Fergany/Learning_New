@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Fluttter/Clima-Flutter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Fluttter/bitcoin-ticker-flutter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Fluttter/bmi-calculator-flutter" vcs="Git" />
+  </component>
+</project>

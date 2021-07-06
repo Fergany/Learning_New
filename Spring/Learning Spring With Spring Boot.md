@@ -4,10 +4,11 @@ https://www.linkedin.com/learning/learning-spring-with-spring-boot-2/
 Spring Framework:
 =================
 - Framework for providing comperhensive infrastructural support for developing Java applications.
+- Provides the plumbing (focus on the buz)  
 - OOP best practices built-in.
-- DRY priniciple.
+- DRY principle.
 
-Some Definistions:
+Some Definitions:
 ==================
 - POJO - object that has state and behavior.
 - JavaBeans - Simple objects with only getters and setters.
@@ -21,20 +22,26 @@ Some Definistions:
   - Spring Boot provides auto-configuration of the ApplicationContext.
 
 
-So, we’ve to create an object with new keyword. But Spring has a magical annotation called Autowired. Basically, Spring has an ApplicationContext where it already stores objects of the classes which are marked with annotations like Service, Component, etc. Whenever you need objects of such classes, use Autowired, it’ll give them to you.
+So, we’ve to create an object with new keyword. But Spring has a magical annotation called Autowired. 
+Basically, Spring has an ApplicationContext where it already stores objects of the classes which are marked with annotations like Service, Component, etc. 
+Whenever you need objects of such classes, use Autowired, it’ll give them to you.
 
 
 java.lang.IllegalStateException: Failed to load ApplicationContext
 No identifier specified for entity: com.example.todo.ToDo
-This is because Hibernate is unable to interact with our Entity. To make it interact: create default, parametrized constructers and getters-setters for both the fields. Create a primary key id which gets generated each time by the JPA.
+This is because Hibernate is unable to interact with our Entity. To make it interact: create default, parametrized constructers and getters-setters for both the fields. 
+Create a primary key id which gets generated each time by the JPA.
+
 Spring Boot:
 ============
 - Supports rapid development.
 - Remove boilerplate of application setup.
 - Many uses.
+  Spring Boot only applies to web applications, 
+  While it does fit in this model of web applications very well, Spring Boot can be used for batch processing, cron jobs, ETL type work, asynchronous messaging systems, and the list goes on.
+- Cloud native support.
 
 Key Components:
-
 - Embedded Tomcat (or others).
 - Embedded databases support and hibernate / JBS dialect.
 - Auto-configuration of ApplicationContext.

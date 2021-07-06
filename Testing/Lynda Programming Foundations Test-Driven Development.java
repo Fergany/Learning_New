@@ -7,7 +7,8 @@ Note that the testing in TDD is only unit testing. That is, testing your code at
 
 The key idea is that you first write your test case, and then write the code to pass that test case. 
 
-before you write a single line of code, you first write a test case for it. And that is the golden rule of test-driven development.
+before you write a single line of code, you first write a test case for it.
+		And that is the golden rule of test-driven development.
 
 
 
@@ -136,7 +137,11 @@ AssertJ
 
 
 Hamcrest
---------
+---------
+- Available in Maven central repository
+- Implemented for many language such as Java, Python, Ruby, ObjectiveC
+- Intergrates with other testing frameworks, such as TestNG,
+		and mocking frameworks such as JMock and EasyMock
 - A framework for writing matchers allowing match rules to be defined.
 	assertThat(str, allOf(containsString(...), StartsWith(...)));
 	
@@ -147,7 +152,8 @@ Hamcrest
 Test doubles
 ============
 The system or the object on the test may have external dependencies such as databases, web services or other systems but you may not have access to these external dependencies all the time or they may not even be ready at the time of testing. 
-So the option is to create proxies for these external dependencies or what are formally called as Test Doubles. Test Doubles simulate the behavior of the objects. They are of five different types. A Test Double can be a dummy object, a stub, a fake object, a spy or a mock.
+So the option is to create proxies for these external dependencies or what are formally called as Test Doubles. Test Doubles simulate the behavior of the objects.
+		They are of five different types. A Test Double can be a dummy object, a stub, a fake object, a spy or a mock.
 
 
 Mocking

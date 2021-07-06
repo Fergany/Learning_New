@@ -30,3 +30,56 @@ Hot reload vs hot restart
 **Hot restart** reset the state of the whole app
 
 The way that Hot Reload and Hot Restart work, what they do is they will only look at the changes that were made, and they will push those changes on to your testing device
+
+### Flutter: Part 08 Powering Your App with Live Web Data
+- async: let ur prg proceed executing while waiting for a result.
+- Future Operation:
+  are operations that takes sometimes to execute and return result later,
+we can handle it using async & await.
+  "something will execute in the future"
+  "promise that something will happen in the future"
+  "like promise in JS"
+  
+#### Stateful widget lifecycle
+
+in stateless widget you have to destroy them and 
+
+Stateless Widgets are basically just like very simple lego blocks, right? You can't saw them in half, you can't change them, you can't do anything with them, 
+unless you decide to destroy them and create a new one. 
+And you have to keep destroying and creating new ones every time you want a change in a Stateless Widget. So for these widgets, their lifecycle methods are very simple, there's only one that you should be concerned
+
+#### lifecycle
+- intiState(); // when created and added into the tree
+- build() // something happened every single time when the widget rebuild
+- deactivate() ==> triggered when this Stateful Widget gets destroyed. 
+
+#### Exception Handling
+- When something unexpected happen, instead of our code crash, 
+you write code to handle this exception.
+```aidl
+  try {
+  } catch (exception) {
+  }
+```
+
+Null aware operation:
+to check if the var has a value use it, if not use the other value
+```aidl
+  variable ?? otherValue
+```
+
+#### Networking with Flutter http pkg
+```aidl
+import 'package:http/http.dart' as http;
+...
+void getRespone() async {
+  http.Resposne response = await http.get(url);
+  print(response.body);// response.statusCode
+  } 
+  without as http
+  Resposne response = await get(url);
+  print(response.body);// response.statusCode
+  } 
+```
+
+#### JSON parsing and dynamics types

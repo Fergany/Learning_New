@@ -1,5 +1,6 @@
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 
 public class Main {
@@ -44,18 +45,118 @@ public class Main {
     
 
     public static void main(String[] args) {
-//        System.out.println(permute(new int[]{1, 2, 3}));
+        System.out.println(Integer.parseInt("+399999999999942"));
+//      int[] nums = new int[]{1,5,0,4,1,3};
+//      List<Integer> list = Arrays.asList(1, 2, 3, 4);
+//        Arrays.stream(list.stream().mapToInt(Integer::intValue).toArray()).sum();
+//      char[] arr3 = new char[]{'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', '1'};
+//
+//        System.out.println(Arrays.asList(arr3).stream().count()); // 1
+//
+//        char[] list3 = {'a','c','e'};
+//        Stream<Character> charStream = new String(list3).chars().mapToObj(i->(char)i);
+//
+//        Map<Integer, Long> map = Arrays
+//                .stream(nums)
+//                .boxed()
+//                .collect(Collectors.groupingBy(num -> num, Collectors.counting()))
+//                .entrySet()
+//                .stream()
+//                .sorted((i1, i2)
+//                        -> i2.getValue().compareTo(
+//                        i1.getValue()))
+//                .collect(Collectors.toMap(
+//                        Map.Entry::getKey,
+//                        Map.Entry::getValue,
+//                        (e1, e2) -> e1, LinkedHashMap::new));
+//
+//        Arrays
+//                .stream(nums)
+//                .boxed()
+//                .collect(Collectors.groupingBy(num -> num, Collectors.counting()))
+//                .entrySet()
+//                .stream()
+//                .sorted((entry1, entry2) -> entry2.getValue().compareTo(entry1.getValue()))
+//                .map(Map.Entry::getKey)
+//                .limit(3)
+//                .mapToInt(Integer::intValue)
+//                .findFirst()
+//                .getAsInt();
+//
+//
+//        char c = 'A';
+//        if(c == 65) {
+//            System.out.println("");
+//        }
 
-        List<Integer> list1 = Arrays.asList(1, 2, 3);
-        List<Integer> list2 = List.of(1, 2, 3);
-        List<Integer> list3 = new ArrayList<>(){{
-            list3.add(1)
-        }};
-
-        Map<Integer, Integer> map = new HashMap<>(){{
-            map.put(1, 3);
-        }};
     }
+
+    public static String longestCommonPrefix(String[] strs) {
+        String result = Arrays
+                .stream(strs)
+                .sorted((str1, str2) -> str1.length() - str2.length())
+                .findFirst()
+                .get();
+        return null;
+    }
+
+    public static int firstUniqChar(String s) {
+        List<Integer> result3 = s
+                .chars()
+                .boxed()
+                .collect(Collectors.groupingBy(c -> c, Collectors.counting()))
+                .entrySet()
+                .stream()
+                .filter(entry -> entry.getValue() == 1)
+                .map(Map.Entry::getKey)
+                .collect(Collectors.toList());
+
+        for(int i = 0; i < s.length(); i++) {
+            if(result3.contains((int) s.charAt(i))) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public static String longestPalindrome2(String s) {
+        String result = "";
+        StringBuilder strBuilder;
+        for(int i = 0; i < s.length(); i++) {
+            strBuilder = new StringBuilder();
+            for(int j = i; j < s.length(); j++) {
+                strBuilder.append(s.charAt(j));
+                if(isPlaindrome(strBuilder)) {
+                    result = strBuilder.length() > result.length()? strBuilder.toString() : result;
+                }
+
+            }
+        }
+        return result;
+    }
+
+    private static boolean isPlaindrome(StringBuilder str) {
+        StringBuilder str2 = new StringBuilder(str.toString()).reverse();
+        return str2.toString().equals(str.toString());
+    }
+
+    public static boolean isHappy(int n) {
+        String number = String.valueOf(n);
+        if(number.length() == 1) {
+            return number == "1";
+        }
+        int m = 0;
+        for(char c : number.toCharArray()) {
+            m += Math.pow(Character.getNumericValue(c), 2);
+        }
+        return isHappy(m);
+    }
+
+    public static int removeDuplicates(int[] nums) {
+        return new HashSet(Arrays.asList(nums)).size();
+    }
+
+
 
     public static List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> result = null;

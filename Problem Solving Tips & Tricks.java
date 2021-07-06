@@ -194,4 +194,14 @@ Before JDK 5.0, it was not possible to override a method by changing the return 
 
 Covariant return types
 
-Java 5.0 onwards it is possible to have different return type for a overriding method in child class, but child’s return type should be sub-type of parent’s return type. Overriding method becomes variant with respect to return type.		
+Java 5.0 onwards it is possible to have different return type for a overriding method in child class, but child’s return type should be sub-type of parent’s return type. Overriding method becomes variant with respect to return type.
+
+
+Using Object.clone()
+Java array internally implements a Cloneable interface and thus it is easy to clone a Java array.
+You can clone one-dimensional as well as two-dimensional arrays.
+When you clone one-dimensional array, it makes a deep copy of array elements which is copying the values.
+
+On the other hand, when you clone two dimensional or multi-dimensional arrays,
+a shallow copy of elements is made i.e. only references are copied.
+This cloning of arrays is done by the ‘Clone ()’ method provided by the arrays.
