@@ -7,6 +7,7 @@ Using the Angular CLI
 ---------------------
 Angular:
 - App framework
+- Angular provides you the ability to build client side web application.
 - Component based.
   Angular itself, not Angular JS, is a component-based framework, which means that the way you build code is by creating small pieces of code and then connecting them together. Each piece can contain its own scripts, templates and CSS, and can talk to other components.
   
@@ -45,7 +46,8 @@ Understanding Angular CLI project:
  src
  
  angular-cli.json:
-	
+
+ main.ts
  
  A really important file is the main.ts file. This is the first file that your application will load so it boots up the application and loads up all the different modules. 
  The main TS file is the main.ts file which loads everything else in your application
@@ -63,7 +65,7 @@ Understanding templates in Angular:
 -----------------------------------
 @Component({
   selector: 'app-header',
-  templateUrl: './header.component.html', // or template, in case of multi-line use this ` back tick not '
+  templateUrl: './header.component.html', // or template to write the code directly, in case of multi-line use this ` back tick not '
   styleUrls: ['./header.component.css'] // or style: [` some styles`] applied only to this template.
 })
 
@@ -81,8 +83,7 @@ Declaring var types
 
 Working with events:
 --------------------
-( evt )
-Bind to a method
+( evt ) // Bind to a method
 $event info
 
 (click) = "method($event, otherParam)"

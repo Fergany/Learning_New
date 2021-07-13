@@ -30,6 +30,7 @@ Boolean = one bit
 
 Data Structure
 ==============
+- is A way of collecting and organizing data.
 - A collection with a defined way of accessing and storing items.
 - is a container, that allow you to combine 
 - Data structures give us organization, storage, and access.

@@ -163,6 +163,8 @@ mvn quarkus:add-extension -Dextensions="dependency-name"
             <artifactId>quarkus-smallrye-openapi</artifactId>
         </dependency>
       ```
+	Gradle:
+implementation group: 'io.quarkus', name: 'quarkus-smallrye-openapi'	
     - add properties quarkus.swagger-ui.enable=true
     - check it on url/swagger-ui
     

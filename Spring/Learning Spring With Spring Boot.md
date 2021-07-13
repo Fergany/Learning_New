@@ -191,8 +191,10 @@ Service Object
 So, we're just going to allow it to be component scanned. So, I'm going to set this to be an @Service. Now, @Service is just a stereotype of @Component, which allows component scanning to occur. 
 
 But, again, you could also just do @Component, it will work just fine. 
-The other thing that I like to do is go ahead and auto-wire my constructor. Now, this is technically not required. Since there's only one constructor, Spring will use it by default and assume it has all of the beans to find in the application context. However, I get a couple benefits by specifying the @Autowired on my constructor. 
-Number one, my IDE is smart enough to know if I've defined that bean in the application context that would run with this application, so it would give me a warning that it doesn't know of that bean type. The other benefit that I get from that is it's very clear to me which constructor is being called at any point in time and if someone comes in and adds another constructor, they would have to make that change to make that the auto-wired constructor.
+The other thing that I like to do is go ahead and auto-wire my constructor. Now, this is technically not required. Since there's only one constructor, Spring will use it by default and assume it has all of the beans to find in the application context. 
+However, I get a couple benefits by specifying the @Autowired on my constructor. 
+Number one, my IDE is smart enough to know if I've defined that bean in the application context that would run with this application, so it would give me a warning that it doesn't know of that bean type. 
+The other benefit that I get from that is it's very clear to me which constructor is being called at any point in time and if someone comes in and adds another constructor, they would have to make that change to make that the auto-wired constructor.
 
 Controller
 ==========
@@ -201,7 +203,7 @@ Model (data).
 View (visual display that is populated).
 Controller (wires the view with the model).
 
-Spring Controller****
+Spring Controller
 -----------------
 (The heart of spring application.)
 Spring Bean

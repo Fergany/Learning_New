@@ -68,7 +68,7 @@ mvn clean package
 ```
 - Gradle.
 - Build scripts.
-- 
+
 **Running Jar File**
 - Spring Boot applications are best suited as JAR files. 
 - Josh Long "Make JAR not WAR," when Spring Boot first came out to help shift this mindset. 
@@ -130,4 +130,5 @@ mixture of components needed to get an app up and running.
 - default includes embedded Tomcat server.
     - can use another web servers if desired.
 - JSON Marshaller
+
   
