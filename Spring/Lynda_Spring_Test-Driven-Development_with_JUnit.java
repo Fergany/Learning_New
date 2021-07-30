@@ -59,8 +59,11 @@ import com.hanselnpetal.domain.CustomerContact;
 
 
 // we are testing a Spring application
-@RunWith(SpringRunner.class)
+@RunWith(SpringRunner.class) //
 // let JUnit know that not only are we testing a Spring application, but this is a Spring Boot application
+// Now, in JUnit 5 it is a simple extension:
+//@ExtendWith(SpringExtension.class)
+
 @SpringBootTest(webEnvironment = WebEnvironment.NONE)
 // as we will test Service only, so don't load the controllers
 
